@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+	<LinearLayout
+	    android:id="@+id/linearLayout1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:gravity="center"
+	    android:orientation="vertical" >
+
+		<LinearLayout
+		    android:id="@+id/linearlayout2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="136dp"
+		    android:gravity="center"
+		    android:orientation="vertical" >
+
+		    <ImageView
+		        android:id="@+id/prof_image"
+		        android:layout_width="108dp"
+		        android:layout_height="108dp"
+		        android:layout_marginTop="5dp"
+		        android:layout_weight="0.60"
+		        android:src="@drawable/louie" />
+
+		    <TextView
+		        android:id="@+id/prof_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="20dp"
+		        android:layout_marginTop="2dp"
+		        android:text="Louie Abueva" />
+
+		</LinearLayout>
+
+    	<LinearLayout
+	    android:id="@+id/linearLayout3"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:gravity="center"
+	    android:orientation="horizontal" >
+
+    	 	    <Button
+    	 	        android:id="@+id/button_photos"
+    	 	        android:layout_width="wrap_content"
+    	 	        android:layout_height="75dp"
+    	 	        android:layout_weight="0.18"
+    	 	        android:background="#eded05"
+    	 	        android:text="Photos"
+    	 	        android:textSize="15sp" />
+
+    	 	    <Button
+    	 	        android:id="@+id/button_spots"
+    	 	        android:layout_width="wrap_content"
+    	 	        android:layout_height="match_parent"
+    	 	        android:layout_weight="0.18"
+    	 	        android:background="#ffa201"
+    	 	        android:text="Spots"
+    	 	        android:textSize="15sp" />
+
+    	 	    <Button
+    	 	        android:id="@+id/button_friends"
+    	 	        android:layout_width="wrap_content"
+    	 	        android:layout_height="match_parent"
+    	 	        android:layout_weight="0.19"
+    	 	        android:background="#47ea72"
+    	 	        android:text="Friends"
+    	 	        android:textSize="15sp" />
+
+    	 	    <Button
+    	 	        android:id="@+id/button_checklist"
+    	 	        android:layout_width="wrap_content"
+    	 	        android:layout_height="match_parent"
+    	 	        android:layout_weight="0.19"
+    	 	        android:background="#47b4ea"
+    	 	        android:text="Check List"
+    	 	        android:textSize="15sp" />
+    	 	</LinearLayout>
+   			 <ListView
+        		android:id="@+id/spotsListView"
+        		android:layout_width="match_parent"
+       			android:layout_height="wrap_content">
+   			 </ListView>
+  
+   </LinearLayout>
+
+</RelativeLayout>
